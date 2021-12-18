@@ -11,24 +11,16 @@
 </head>
 <body>
     <h1>Server Side Calculator</h1>
-    <form>
+    <form id="operationForm">
         <input
             type="number"
             placeholder="First number"
             id="firstNumber">
          </input>
-         <button class="operation" type="button">
-            +
-         </button>
-         <button class="operation" type="button">
-            -
-         </button>
-         <button class="operation" type="button">
-            *
-         </button>
-         <button class="operation" type="button">
-            /
-         </button>
+         <button class="operation" data-operation="addition" type="button">+</button>
+         <button class="operation" data-operation="subtraction" type="button">-</button>
+         <button class="operation" data-operation="multiplication" type="button">*</button>
+         <button class="operation" data-operation="division" type="button">/</button>
          <input
             type="number"
             placeholder="Second number"
