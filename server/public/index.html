@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/client.js"></script>
+    <title>Server Side Calculator</title>
+</head>
+<body>
+    <h1>Server Side Calculator</h1>
+    <form>
+        <input
+            type="number"
+            placeholder="First number"
+            id="firstNumber">
+         </input>
+         <button class="operation" type="button">
+            +
+         </button>
+         <button class="operation" type="button">
+            -
+         </button>
+         <button class="operation" type="button">
+            *
+         </button>
+         <button class="operation" type="button">
+            /
+         </button>
+         <input
+            type="number"
+            placeholder="Second number"
+            id="secondNumber">
+        </input>
+        <button id="equals" type="submit">
+            =
+         </button>
+         <button id="clear"" type="button">
+            C
+         </button>
+    </form>
+    <h2 id="calcResult"></h2>
+    <ul id="historical"></ul>
+</body>
+</html>
