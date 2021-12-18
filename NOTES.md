@@ -2,7 +2,7 @@
 
 1. User inputs 2 number values [X]
 2. User selects button for operation type (+-/*) [X]
-    2a. C button clears user inputs [ ]
+    2a. C button clears user inputs [X]
 3. User clicks = button, makes object [X]
     - POST /math [ ]
 5. GET /math [ ]

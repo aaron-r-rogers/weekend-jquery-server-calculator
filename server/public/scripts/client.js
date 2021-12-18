@@ -52,17 +52,38 @@ function onEquals (event) {
             console.log('POST failed😱');
             alert('Something has gone wrong. Try again later');
         });//this is what happens with no server response
-    clearInputs();
+    refresh();
 }
 
 function clearInputs () {
     $('#firstNumber').val('');
     $('#secondNumber').val('');
     $('#firstNumber').focus();
+    $('#calcResult').empty();
     //clears input fields on DOM
 }
 
-// function render (results) {
-//     results.output
-//     results.historical
-// }
+function refresh () {
+    let ajaxOptions = {
+        method: 'GET',
+        url: '/results'
+    };
+
+    $.ajax(ajaxOptions)
+        .then((response) => {
+            console.log('ajax request complete', response);
+            render(response);
+        });
+}
+
+function render (results) {
+    console.log('results are:', results)
+    $('#historical').empty();
+    $('#calcResult').append(`
+        <h2>${results.output}</h2>`);
+    let historicalArray = results.historical;
+    for (let entry of historicalArray) {
+        $('#historical').append(`
+            <li>${entry}</li>`);
+    }
+}
