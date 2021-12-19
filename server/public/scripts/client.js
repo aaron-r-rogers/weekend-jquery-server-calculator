@@ -36,9 +36,9 @@ function onEquals (event) {
         split('+').join(',').split('-').join(',').split('*').join(',').split('/').join(',').split(',');
     console.log('testing:', newInput);
     let calc = {
-        num1: $('#firstNumber').val(),
+        num1: newInput[0],
         operation: clickedOperation,
-        num2: $('#secondNumber').val()
+        num2: newInput[1]
     };//creates object with two numbers and operation
     console.log('calc is:', calc);
 

@@ -12,34 +12,29 @@
 <body>
     <h1>Server Side Calculator</h1>
     <form id="operationForm">
-        <input
-            type="number"
-            step="0.0001"
-            placeholder="First number"
-            class="limitLength"
-            id="firstNumber">
-         </input>
-         <button class="operation" data-operation="addition" type="button">+</button>
-         <button class="operation" data-operation="subtraction" type="button">-</button>
-         <button class="operation" data-operation="multiplication" type="button">*</button>
-         <button class="operation" data-operation="division" type="button">/</button>
-         <input
-            type="number"
-            step="0.0001"
-            placeholder="Second number"
-            class="limitLength"
-            id="secondNumber">
-        </input>
-        <button id="equals" type="submit">
-            =
-         </button>
-         <button id="clear" type="button">
-            C
-         </button>
-         <input 
+        <input 
             type="text"
             id="formulaInput">
         </input>
+        <button id="clear" type="button">
+            C
+         </button></br>
+         <button data-number="7" type="button">7</button>
+         <button data-number="8" type="button">8</button>
+         <button data-number="9" type="button">9</button>
+         <button class="operation" data-operation="addition" type="button">+</button></br>
+         <button data-number="4" type="button">4</button>
+         <button data-number="5" type="button">5</button>
+         <button data-number="6" type="button">6</button>
+         <button class="operation" data-operation="subtraction" type="button">-</button></br>
+         <button data-number="1" type="button">1</button>
+         <button data-number="2" type="button">2</button>
+         <button data-number="3" type="button">3</button>
+         <button class="operation" data-operation="multiplication" type="button">*</button></br>
+         <button data-number="0" type="button">0</button>
+         <button data-number="." type="button">.</button>
+         <button id="equals" type="submit">=</button>
+         <button class="operation" data-operation="division" type="button">/</button>
     </form>
     <div class="limitLength" id="calcResult"></div>
     <ul id="historical"></ul>
