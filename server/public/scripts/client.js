@@ -64,10 +64,10 @@ function onEquals (event) {
 }
 
 function clearInputs () {
-    $('#firstNumber').val('');
-    $('#secondNumber').val('');
-    $('#firstNumber').focus();
+    //$('#formulaInput').value = '';
     $('#calcResult').empty();
+    clickedInput = [];
+    $('#formulaInput').empty();
     //clears input fields on DOM
 }
 
@@ -106,8 +106,9 @@ function appendOperation () {
     clickedInput.push(clickedOperation);
     renderInputs();
 }
-
+     
 function renderInputs () {
     $('#formulaInput').empty();
     $('#formulaInput').append(clickedInput.toString().replaceAll(',', ''));
+    console.log(clickedInput.toString().replaceAll(',', ''));
 }
