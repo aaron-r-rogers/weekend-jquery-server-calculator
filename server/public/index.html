@@ -11,32 +11,34 @@
 </head>
 <body>
     <h1>Server Side Calculator</h1>
-    <form id="operationForm">
-        <textarea
-            rows="1"
-            cols="20"
-            id="formulaInput">
-        </textarea>
-        <button id="clear" type="button">
-            C
-         </button></br>
-         <button class="number" type="button">7</button>
-         <button class="number" type="button">8</button>
-         <button class="number" type="button">9</button>
-         <button class="operation" data-operation="addition" type="button">+</button></br>
-         <button class="number" type="button">4</button>
-         <button class="number" type="button">5</button>
-         <button class="number" type="button">6</button>
-         <button class="operation" data-operation="subtraction" type="button">-</button></br>
-         <button class="number" type="button">1</button>
-         <button class="number" type="button">2</button>
-         <button class="number" type="button">3</button>
-         <button class="operation" data-operation="multiplication" type="button">*</button></br>
-         <button class="number" type="button">0</button>
-         <button class="number" type="button">.</button>
-         <button id="equals" type="submit">=</button>
-         <button class="operation" data-operation="division" type="button">/</button>
-    </form>
+    <div class="calculatorGrid">
+        <form id="operationForm">
+            <textarea
+                rows="1"
+                cols="20"
+                id="formulaInput">
+            </textarea>
+            <button id="clear" type="button">
+                C
+            </button></br>
+            <button class="number" type="button">7</button>
+            <button class="number" type="button">8</button>
+            <button class="number" type="button">9</button>
+            <button class="operation" data-operation="addition" type="button">+</button></br>
+            <button class="number" type="button">4</button>
+            <button class="number" type="button">5</button>
+            <button class="number" type="button">6</button>
+            <button class="operation" data-operation="subtraction" type="button">-</button></br>
+            <button class="number" type="button">1</button>
+            <button class="number" type="button">2</button>
+            <button class="number" type="button">3</button>
+            <button class="operation" data-operation="multiplication" type="button">*</button></br>
+            <button class="number" type="button">0</button>
+            <button class="number" type="button">.</button>
+            <button id="equals" type="submit">=</button>
+            <button class="operation" data-operation="division" type="button">/</button>
+        </form>
+    </div>
     <div class="limitLength" id="calcResult"></div>
     <ul id="historical"></ul>
 </body>

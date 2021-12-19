@@ -20,12 +20,8 @@
 
 # STRETCH
 
-[ ] Looks like calculator buttons
-[ ] Alerts for improper/missing data
+[X] Looks like calculator buttons
+[X] Alerts for improper/missing data
 [ ] User delete request that clears history (no POST/GET)
 [ ] Click on entry in history that brings old calc back to inputs
 [ ] Deploy to Heroku
-
-# TODO
-
-[ ] Change clear inputs funciton for calculator
