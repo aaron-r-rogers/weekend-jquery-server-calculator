@@ -2,6 +2,8 @@ $(document).ready(onReady);
 
 let clickedOperation = '';
 //global var for selected operation
+let clickedInput = [];
+//global array for calculator number selection
 
 function onReady () {
     console.log('so ready');
@@ -11,6 +13,8 @@ function onReady () {
     //equals/submit click listener
     $('#clear').on('click', clearInputs);
     //clear button click listener
+    $('.number').on('click', appendNums);
+    //number buttons click listener
 
     let ajaxOptions = {
         method: 'GET',
@@ -28,6 +32,7 @@ function onGetOperation () {
     clickedOperation = $(this).text();
     //gets text of selected operation for global variable
     console.log('selected operation:', clickedOperation);
+    appendOperation(clickedOperation);
 }
 
 function onEquals (event) {
@@ -89,4 +94,20 @@ function render (results) {
         $('#historical').append(`
             <li>${entry}</li>`);
     }
+}
+
+function appendNums () {
+    clickedNum = $(this).text();
+    clickedInput.push(clickedNum);
+    renderInputs();
+}
+
+function appendOperation () {
+    clickedInput.push(clickedOperation);
+    renderInputs();
+}
+
+function renderInputs () {
+    $('#formulaInput').empty();
+    $('#formulaInput').append(clickedInput.toString().replaceAll(',', ''));
 }

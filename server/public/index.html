@@ -12,27 +12,28 @@
 <body>
     <h1>Server Side Calculator</h1>
     <form id="operationForm">
-        <input 
-            type="text"
+        <textarea
+            rows="1"
+            cols="20"
             id="formulaInput">
-        </input>
+        </textarea>
         <button id="clear" type="button">
             C
          </button></br>
-         <button data-number="7" type="button">7</button>
-         <button data-number="8" type="button">8</button>
-         <button data-number="9" type="button">9</button>
+         <button class="number" type="button">7</button>
+         <button class="number" type="button">8</button>
+         <button class="number" type="button">9</button>
          <button class="operation" data-operation="addition" type="button">+</button></br>
-         <button data-number="4" type="button">4</button>
-         <button data-number="5" type="button">5</button>
-         <button data-number="6" type="button">6</button>
+         <button class="number" type="button">4</button>
+         <button class="number" type="button">5</button>
+         <button class="number" type="button">6</button>
          <button class="operation" data-operation="subtraction" type="button">-</button></br>
-         <button data-number="1" type="button">1</button>
-         <button data-number="2" type="button">2</button>
-         <button data-number="3" type="button">3</button>
+         <button class="number" type="button">1</button>
+         <button class="number" type="button">2</button>
+         <button class="number" type="button">3</button>
          <button class="operation" data-operation="multiplication" type="button">*</button></br>
-         <button data-number="0" type="button">0</button>
-         <button data-number="." type="button">.</button>
+         <button class="number" type="button">0</button>
+         <button class="number" type="button">.</button>
          <button id="equals" type="submit">=</button>
          <button class="operation" data-operation="division" type="button">/</button>
     </form>
