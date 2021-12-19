@@ -60,4 +60,5 @@ function makeFormula (calcObject) {//takes in unadultered object
     let newOutput = `${firstPart}=${calcResult}`;//combines last line with calculated value
     historicalCalc.push(newOutput.replaceAll(',', ''));//gets rid of commas and adds to array
     console.log('new historical array:', historicalCalc);
+    //this whole function feels sloppy for some reason; consider alternatives
 }

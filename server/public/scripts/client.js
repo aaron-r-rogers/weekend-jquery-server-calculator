@@ -32,6 +32,9 @@ function onGetOperation () {
 
 function onEquals (event) {
     event.preventDefault();//prevents page reload
+    newInput = $('#formulaInput').val().
+        split('+').join(',').split('-').join(',').split('*').join(',').split('/').join(',').split(',');
+    console.log('testing:', newInput);
     let calc = {
         num1: $('#firstNumber').val(),
         operation: clickedOperation,

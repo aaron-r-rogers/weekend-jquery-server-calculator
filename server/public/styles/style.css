@@ -1,0 +1,15 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.limitLength {
+    width: 12em;
+}
+
+h1 {
+    margin: 80px 30px 30px;
+}
+
+#operationForm, #calcResult, #historical {
+    margin: 30px;
+}

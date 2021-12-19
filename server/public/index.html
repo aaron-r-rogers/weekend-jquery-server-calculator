@@ -14,7 +14,9 @@
     <form id="operationForm">
         <input
             type="number"
+            step="0.0001"
             placeholder="First number"
+            class="limitLength"
             id="firstNumber">
          </input>
          <button class="operation" data-operation="addition" type="button">+</button>
@@ -23,17 +25,23 @@
          <button class="operation" data-operation="division" type="button">/</button>
          <input
             type="number"
+            step="0.0001"
             placeholder="Second number"
+            class="limitLength"
             id="secondNumber">
         </input>
         <button id="equals" type="submit">
             =
          </button>
-         <button id="clear"" type="button">
+         <button id="clear" type="button">
             C
          </button>
+         <input 
+            type="text"
+            id="formulaInput">
+        </input>
     </form>
-    <div id="calcResult"></div>
+    <div class="limitLength" id="calcResult"></div>
     <ul id="historical"></ul>
 </body>
 </html>
