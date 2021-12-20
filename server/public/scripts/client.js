@@ -87,7 +87,11 @@ function refresh() {
 	$.ajax(ajaxOptions).then((response) => {
 		console.log('ajax request complete', response);
 		render(response);
-	});//updates history after /math POST
+	})//updates history after /math POST
+	.catch((err) => {
+		console.log('POST failed😱');
+		alert('Something has gone wrong. Try again later');
+	}); //this is what happens with no server response
 }
 
 function render(results) {
