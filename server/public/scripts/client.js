@@ -47,7 +47,7 @@ function onEquals(event) {
 		.split('/')
 		.join(',')
 		.split(',');//this feels hacky; better way?
-	console.log('new input:' newInput);
+	console.log('new input:', newInput);
 	let calc = {
 		num1: newInput[0],
 		operation: clickedOperation,

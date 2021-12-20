@@ -24,4 +24,4 @@
 [X] Alerts for improper/missing data
 [ ] User delete request that clears history (no POST/GET)
 [ ] Click on entry in history that brings old calc back to inputs
-[ ] Deploy to Heroku
+[X] Deploy to Heroku
