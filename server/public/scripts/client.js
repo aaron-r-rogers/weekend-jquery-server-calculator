@@ -89,7 +89,7 @@ function refresh() {
 		render(response);
 	})//updates history after /math POST
 	.catch((err) => {
-		console.log('POST failed😱');
+		console.log('GET failed😱');
 		alert('Something has gone wrong. Try again later');
 	}); //this is what happens with no server response
 }
